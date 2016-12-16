@@ -9,8 +9,9 @@
 <body>
 
 <form action="inserirUsuario" method="post" enctype="multipart/form-data">
-	Nome: <input type="text" name="nome"><br />
+	Nome: <input type="text" name="nome"><br /> 
 	Sobrenome: <input type="text" name="sobrenome"><br />
+	Idade: <input type="text" name="idade"><br />
 	Email: <input type="text" name="email"><br />
 	Login: <input type="text" name="login"><br />
 	Senha: <input type="password" name="senha"><br />
