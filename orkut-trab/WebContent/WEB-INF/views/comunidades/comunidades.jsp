@@ -7,9 +7,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
-<body>
+<body bgcolor=#FFC1C1>
 
 <a href="inserirComunidadeFormulario">Criar Comunidade</a>
+<center>
 
 <table border="1">
 
@@ -29,6 +30,7 @@
 	</c:forEach>
 	
 </table>
+</center>
 
 </body>
 </html>

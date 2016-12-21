@@ -40,6 +40,7 @@ public class Fotos {
 	private Collection<Comentarios> comentarios;
 	
 	//LISTA DE COMENTÁRIOS
+	
 
 	public Long getFotId() {
 		return fotId;
@@ -49,32 +50,12 @@ public class Fotos {
 		this.fotId = fotId;
 	}
 
-	public Long getUsuId() {
-		return usuId;
-	}
-
-	public void setUsuId(Long usuId) {
-		this.usuId = usuId;
-	}
-
-	public String getImagem() {
-		return imagem;
-	}
-
-	public void setImagem(String imagem) {
-		this.imagem = imagem;
-	}
-	public Usuario getUsuario() {
-		return usuario;
-	}
-
-	public void setUsuario(Usuario usuario) {
-		this.usuario = usuario;
-	}
+	
 
 	public Collection<Comentarios> getComentarios() {
 		return comentarios;
 	}
+
 
 	public void setComentarios(Collection<Comentarios> comentarios) {
 		this.comentarios = comentarios;

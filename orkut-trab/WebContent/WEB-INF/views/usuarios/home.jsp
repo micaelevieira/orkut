@@ -7,21 +7,23 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Home</title>
 </head>
-<body>
-
+<body bgcolor=#FFC1C1>
+<center>
 <div class="jumbotron">
   <div class="container">
-    
-<h2>BEM-VINDO(A) ${usuario_logado.nome}!</h2>
-<ul>
-	<li><a href="encontrarAmigos"> Encontrar Amigos</a></li>
-	<li>Amigos </li>
-	<li>Minhas Fotos</li>
-	<li> Comunidades Seguidas</li>
-	<li><a href="comunidades">Comunidades</a> </li>
-	<li><a href="logout"> Logout</a>
-</ul>
+<br/><br/><br/><br/>
+<img src="http://bit.do/testandoo" width="100" height="100"><h2>BEM-VINDO(A) ${usuario_logado.nome}!</h2>
+
+<a href="encontrarAmigos"> Encontrar Amigos</a> <br />
+<a href= "listarAmigos">Amigos</a> <br />
+<a href="minhasComunidades"> Comunidades Seguidas</a><br />
+<a href="comunidades">Comunidades</a> <br />
+<a href="logout"> Logout</a>
+
+
   </div>
 </div>
+</table>
+</center>
 </body>
 </html>

@@ -7,11 +7,28 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Perfil</title>
 </head>
-<body>
-<h2>${usuario.nome}</h2>
-<td><img width="100" height="100" src='<c:url value="/resources/images/${usuario.login}.png" />' /> <br/>
-   <b>Nome:</b> ${usuario.nome}</br>
-   <b>Sobrenome:</b>  ${usuario.sobrenome}</br>
-  <b> Email:</b>  ${usuario.email}</br>
+<body bgcolor=#FFC1C1>
+
+<center>
+<br/><br/><br/><br/>
+
+<img src="http://bit.do/orkutt1">
+
+<br/><br/><br/>
+<table border="1">
+	<tr>
+		<td><b>Foto</b></td>
+		<td><b>Nome</b></td>
+		<td><b>Sobrenome</b></td>
+		<td><b>Email</b></td>
+	</tr>
+	<tr>
+		<td><img width="100" height="100" src='<c:url value="/resources/images/${usuario.login}.png" />' /> </td>
+		<td> ${usuario.nome}</td>
+		<td>${usuario.sobrenome}</td>
+		<td>${usuario.email}</td>
+	</tr>
+</table>
+</center>
 </body>
 </html>

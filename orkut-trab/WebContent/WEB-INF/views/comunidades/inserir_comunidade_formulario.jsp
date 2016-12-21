@@ -8,23 +8,25 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Cadastrar Comunidade</title>
 </head>
-<body>
-
+<body bgcolor=#FFC1C1>
+<center>
+<br /><br /><br /><br />
 <form action="inserirComunidade" method="post" enctype="multipart/form-data">
-	Nome: <input type="text" name="nome">
+	Nome: <input type="text" name="nome"><br/>
+	Descrição: <input type="text" name="descricao"><br /> 
 			
 	Categoria: <select size="1" name="catId">
 		<c:forEach var="categoria" items="${categorias}">
 			<option value = ${categoria.catId } >${categoria.nome}</option>
 		</c:forEach>
-	</select>
+	</select> 
 			
 	Imagem: <input type="file" name="image" /><br />
 	
-	Descrição: <input type="text" name="descricao"><br /> 
 	
-	<input type="submit" value="OK">
+	
+	<input type="submit" value="Criar Comunidade">
 </form>
-
+</center>
 </body>
 </html>

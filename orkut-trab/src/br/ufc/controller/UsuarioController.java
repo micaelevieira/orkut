@@ -107,6 +107,13 @@ public class UsuarioController {
 		return "redirect:/encontrarAmigos";
 		
 	}
+	@RequestMapping("/listarAmigos")
+	public String listarAmigos(Model model, HttpSession session){
+		Usuario usuario = (Usuario)session.getAttribute("usuario_logado");
+		List<Amizade> amigos =  amizadeDAO.listarAmizadeId(usuario.getUsuId());
+		model.addAttribute("amigos", amigos);
+		return "usuarios/listar_amigos";
+}
 	@RequestMapping("/perfil/{usuId}")
 	public String perfil(Model model, @PathVariable(value="usuId") Long usuId){
 		Usuario usuario = usuarioDAO.recuperar(usuId);

@@ -13,5 +13,6 @@ public interface IComunidadeDAO {
 	public Comunidade recuperar(Long id);
 	public void apagar(Long id);
 	void participar(Long idComunidade, Usuario u);
+	//public List<Comunidade> listarComunidade();
 
 }

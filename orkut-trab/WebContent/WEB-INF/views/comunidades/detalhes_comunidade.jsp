@@ -7,20 +7,18 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>${comunidade.nome}</title>
 </head>
-<body>
+<body bgcolor=#FFC1C1>
+<center>
 	<form action="criarForum" method="post" enctype="multipart/form-data">
 		<input type="hidden" name="comuId" value="${comunidade.comuId }">
 		<input type="text" name="titulo">
 		<input type="submit" value="Criar Forum">
 	</form>
-	<form action="participarComunidade" method="post">
-		
-		<input type="submit" value="Participar">
-		</form>
 	<ul>
 		<c:forEach var="forum" items="${comunidade.forum}">
 			<li> <a href="detalhesForum/${comunidade.comuId}/${forum.forId}"/ > ${forum.titulo }</a> </li>
 		</c:forEach>
 	</ul>	
+	</center>
 </body>
 </html>

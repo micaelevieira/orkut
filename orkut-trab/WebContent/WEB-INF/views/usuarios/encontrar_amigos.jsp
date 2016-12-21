@@ -9,9 +9,12 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Usuários</title>
 </head>
-<body>
+<body bgcolor=#FFC1C1>
+<center>
+<h4>Escolha seus amigos</h4>
+
 <form action="inserirAmizade" method="post">
-	<table>
+	<table border="1">
 		<c:forEach var="usuario" items="${potenciais_amigos}">
 			<tr>
 				<td>${usuario.nome}</td>
@@ -19,9 +22,11 @@
 				<td><form:checkbox path="amizade.amigos" value="${usuario.usuId }" /></td>
 			</tr>
 		</c:forEach>		
-	</table>
+	</table><br />
 	<input type="submit" value="OK" />
-</body>
 </form>
+</center>
+</body>
+
 
 </html>

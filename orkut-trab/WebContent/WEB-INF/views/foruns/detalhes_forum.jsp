@@ -7,8 +7,9 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Forum</title>
 </head>
-<body>
- <label>Mensagens:</label>
+<body bgcolor=#FFC1C1>
+<center>
+<h3>Mensagens</h3>
 	<table border="1">
 		<c:forEach var="mensagem" items="${forum.mensagem}">
    			<tr>
@@ -22,14 +23,15 @@
 	   </table>
    
  
-   <h2>Nova Mensagem</h2>
+   <h3>Nova Mensagem</h3>
 	<form
 		action='<c:url value="/detalhesComunidade/detalhesForum/enviarMensagem/${comunidade.comuId}/${forum.forId}"></c:url>'
 		method="post" enctype="multipart/form-data">
 
-		<label for="texto">Texto:</label> <input id="texto" name="texto"> 
+		<label for="texto"><b>Texto:</b></label> <input id="texto" name="texto"> 
 			 <input type="submit" value="Enviar"></i>
 		</button>
 	</form>
+	</center>
 </body>
 </html>

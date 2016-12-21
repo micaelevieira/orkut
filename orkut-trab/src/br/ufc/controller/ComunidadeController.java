@@ -118,5 +118,16 @@ public class ComunidadeController {
 		return "comunidades/inserir_comunidade_ok";
 
 	}
+	@RequestMapping("/minhasComunidades")
+	public String minhasComunidades(Model model, HttpSession session){
+
+		Usuario usuario = (Usuario)session.getAttribute("usuario_logado");
+		
+		List<Comunidade> comunidades = usuario.getComunidade();
+		model.addAttribute("comunidades", comunidades);
+
+		return "comunidades/minhas_comunidades";
+	}
+
 
 }

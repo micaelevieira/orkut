@@ -4,9 +4,11 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 
 import org.springframework.stereotype.Repository;
 
+import br.ufc.model.Amizade;
 import br.ufc.model.Comunidade;
 import br.ufc.model.Usuario;
 
@@ -56,4 +58,9 @@ public class ComunidadeDAOHibernate implements IComunidadeDAO {
 		manager.merge(c);
 
 	}
+
+
+
+	
+	
 }

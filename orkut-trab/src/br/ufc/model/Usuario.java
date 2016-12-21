@@ -58,15 +58,9 @@ public class Usuario {
 
 	//LISTA DE COMUNIDADES, MANY-TO-MANY
 	
-	public String getSobrenome() {
-		return sobrenome;
-	}
 
-	public void setSobrenome(String sobrenome) {
-		this.sobrenome = sobrenome;
-	}
 
-	@ManyToMany(mappedBy="usuario",fetch=FetchType.LAZY)
+	@ManyToMany(mappedBy="usuario",fetch=FetchType.EAGER)
 	private List<Comunidade> comunidade;
 	
 	//LISTA DE COMUNIDADES
@@ -113,6 +107,13 @@ public class Usuario {
 	public String getNome() {
 		return nome;
 	}
+	public String getSobrenome() {
+		return sobrenome;
+	}
+
+	public void setSobrenome(String sobrenome) {
+		this.sobrenome = sobrenome;
+	}
 
 	public void setNome(String nome) {
 		this.nome = nome;
@@ -141,6 +142,7 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+	
 
 	//public String getAvatar() {
 	//	return avatar;
